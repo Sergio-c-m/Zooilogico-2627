@@ -24,6 +24,10 @@ public class Reptil extends Animal {
         this.habitat = habitat;
     }
 
+    public void setEsVenenoso(boolean esVenenoso) {
+        this.esVenenoso = esVenenoso;
+    }
+
     public void tomarSol(){
         System.out.println(getNombre() + " esta calentandose al sol.");
     }
