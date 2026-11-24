@@ -3,6 +3,8 @@ package Zoo;
 
 import Zoo.Anfibio.Rana;
 import Zoo.Anfibio.Salamandra;
+
+import Zoo.Mamifero.Canguro;
 import Zoo.Reptiles.DragonDeKomodo;
 import Zoo.Mamifero.Leon;
 import Zoo.OtroInsecto.Saltamontes;
@@ -24,9 +26,9 @@ public class Main {
         System.out.println("Vamos a observar a nuestros animales.\n");
 
         List<Animal> listaDeAnimales = new ArrayList<>();
-
         listaDeAnimales.add(new Rana());
         listaDeAnimales.add(new Salamandra());
+        listaDeAnimales.add(new Canguro());
         listaDeAnimales.add(new Leon());
         listaDeAnimales.add(new PezPayaso());
         listaDeAnimales.add(new Tortuga());
@@ -41,8 +43,9 @@ public class Main {
 
         // Igualo la lista creada en la clase con la lista de todos los animales.
         // Asi conoce los animales de la lista y... podrá morderlos!!
-        DragonDeKomodo.listaDeAnimales = listaDeAnimales;
+      //  DragonDeKomodo.listaDeAnimales = listaDeAnimales;
         listaDeAnimales.add(new DragonDeKomodo());
+
 
         // Cada alumno puede añadir su animal así:
         // listaDeAnimales.add(new SuAnimal());
