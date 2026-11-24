@@ -27,13 +27,13 @@ public class Cobra extends Reptil {
         System.out.println(getNombre() + " sisea de forma amenazante. No quiere compañía.");
     }
 
-    // Sobrescribir método
+    // Sobrescribir metodo
     @Override
     public void moverse() {
         System.out.println(getNombre() + " serpentea silenciosamente por el suelo.");
     }
 
-    // Sobrescribir del método verAnimal
+    // Sobrescribir metodo verAnimal
     @Override
     public void verAnimal() {
         Random random = new Random();
