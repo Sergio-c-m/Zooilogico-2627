@@ -25,6 +25,7 @@ public class Animal {
         this.edad = edad;
         this.peso = peso;
     }
+
     public Animal() {
         Random random = new Random();
         this.nombre = nombresPosibles[random.nextInt(nombresPosibles.length)];
@@ -48,7 +49,8 @@ public class Animal {
     public void moverse() {
         System.out.println(nombre + " se está moviendo.");
     }
-    
+
+
     public void verAnimal() {
         Random random = new Random();
         // Lista de acciones posibles

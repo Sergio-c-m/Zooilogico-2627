@@ -27,7 +27,7 @@ public class Rana extends Anfibio {
         System.out.println(getNombre() + " la rana está saltando por la tierra.");
     }
 
-    // Método único de Rana
+    // Metodo único de Rana
     public void croar() {
         System.out.println(getNombre() + " está croando.");
     }
