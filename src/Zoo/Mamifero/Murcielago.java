@@ -4,24 +4,24 @@ import java.util.Random;
 
 public class Murcielago extends Mamifero{
 
-    private boolean saltar;
-    private boolean guardarCriaEnBolsa;
+    private boolean ecolocalizar;
+    private boolean colgarseBocabajo;
     Random random = new Random();
 
     public Murcielago(){
         super();
-        this.saltar = saltar;
-        this. guardarCriaEnBolsa = guardarCriaEnBolsa;
+        this.ecolocalizar = ecolocalizar;
+        this.colgarseBocabajo = colgarseBocabajo;
     }
 
-    public void saltar(){System.out.println(getNombre() + " está saltando.");}
+    public void ecolocalizar(){System.out.println(getNombre() + " está usando su radar.");}
 
-    public void guardarCria(){
-        guardarCriaEnBolsa = random.nextBoolean();
-        if (guardarCriaEnBolsa){
-            System.out.println(getNombre() + " está guardando a su cría en la bolsa.");
+    public void colgarseBocabajo(){
+        colgarseBocabajo = random.nextBoolean();
+        if (colgarseBocabajo){
+            System.out.println(getNombre() + " está colgándose bocabajo.");
         } else{
-            System.out.println(getNombre() + " está caminando junto a su cría.");
+            System.out.println(getNombre() + " está volando.");
 
         }
     }
@@ -36,8 +36,8 @@ public class Murcielago extends Mamifero{
                 this::amamantar,
                 this::cuidarCrias,
                 this::regularTemperatura,
-                this::saltar,
-                this::guardarCria
+                this::ecolocalizar,
+                this::colgarseBocabajo,
         };
 
         try {
